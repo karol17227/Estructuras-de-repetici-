@@ -1,0 +1,12 @@
+Algoritmo num_impares
+	
+	Escribir "Ingrese el numero limite"
+	Leer n
+	num = 1
+	
+	Mientras num < n
+		Imprimir (num)
+		num = num + 2
+	FinMientras
+
+FinAlgoritmo
