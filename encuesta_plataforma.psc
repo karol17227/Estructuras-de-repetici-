@@ -7,20 +7,15 @@ Algoritmo encuesta_plataforma
 	votosIOS <- 0
 	
 	Repetir
-		
-		Escribir "Ingrese su elección (Android/iOS/0 para terminar):"
+		Escribir "Ingrese su elecciÃ³n (A=Android / I=iOS / 0=Terminar):"
 		Leer eleccion
 		
-		Si eleccion == "Android" O eleccion == "android" Entonces
+		Si eleccion == "A" Entonces
 			votosAndroid <- votosAndroid + 1
-		SiNo
-			Si eleccion == "iOS" O eleccion == "ios" Entonces
-				votosIOS <- votosIOS + 1
-			SiNo
-				Si eleccion <> "0" Entonces
-					Escribir "Elección no válida, no se tendrá en cuenta"
-				FinSi
-			FinSi
+		FinSi
+		
+		Si eleccion == "I" Entonces
+			votosIOS <- votosIOS + 1
 		FinSi
 		
 	Hasta Que eleccion == "0"
@@ -29,12 +24,12 @@ Algoritmo encuesta_plataforma
 	Escribir "Votos iOS: ", votosIOS
 	
 	Si votosAndroid > votosIOS Entonces
-		Escribir "La plataforma elegida es: Android"
+		Escribir "Gana Android"
 	SiNo
 		Si votosIOS > votosAndroid Entonces
-			Escribir "La plataforma elegida es: iOS"
+			Escribir "Gana iOS"
 		SiNo
-			Escribir "Empate, se usará otro mecanismo de elección"
+			Escribir "Empate"
 		FinSi
 	FinSi
 	
