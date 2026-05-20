@@ -1,0 +1,10 @@
+Algoritmo Serie 
+	
+	Definir CantidadTerminos, ContadorNumeros, termino Como Entero
+	
+	Escribir "Ingrese le cantidad de términos a generar:"
+	Leer CantidadTerminos
+	
+	
+	
+FinAlgoritmo
