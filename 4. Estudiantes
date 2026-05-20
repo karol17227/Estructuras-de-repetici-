@@ -1,0 +1,42 @@
+Algoritmo Estudiante
+	
+	Definir notaDefinitiva, sumDefinitiva, promedioGrupo Como Real
+	Definir cantidadEstudiantes, contadorEstudiantes Como Entero
+	Definir aprobaron, reprobaron Como Entero
+	
+	Escribir "Ingrese la cantidad de estudiantes:"
+	Leer cantidadEstudiantes
+	
+	contadorEstudiantes = 0
+	aprobaron = 0
+	reprobaron = 0
+	sumDefinitiva = 0
+	
+	Mientras contadorEstudiantes < cantidadEstudiantes
+		
+		contadorEstudiantes = contadorEstudiantes + 1 
+		Imprimir  contadorEstudiantes
+		
+		Escribir "Ingrese la nota definitiva del estudiantes"
+		Leer notaDefinitiva
+		
+		Si notaDefinitiva >= 3 Entonces
+			aprobaron = aprobaron + 1
+		SiNo
+			reprobaron = reprobaron + 1
+		Fin Si
+		
+		sumDefinitiva = sumDefinitiva + notaDefinitiva
+		
+	FinMientras
+	
+	promedioGrupo = sumDefinitiva/cantidadEstudiantes
+	
+	Escribir "La contidad que aprobaron es:" , aprobaron
+	
+	Escribir "La contidad que reprobaron es:" , reprobaron
+	
+	Escribir "El promedio es:" , promedioGrupo
+	
+	
+FinAlgoritmo
