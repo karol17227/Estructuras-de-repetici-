@@ -1,0 +1,14 @@
+Algoritmo imprimmir_1a10
+	
+	Escribir "Ingrese el numero limite"
+	Leer n
+	num = 0
+	
+	Repetir
+		
+		Escribir num
+		num = num + 2
+		
+	Mientras que num <= n
+	
+FinAlgoritmo
