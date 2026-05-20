@@ -1,0 +1,12 @@
+Algoritmo imprimmir_1a10
+	
+	num = 1
+	
+	Repetir
+		
+		Escribir num
+		num = num +1
+		
+	Mientras que num <= 10
+	
+FinAlgoritmo
