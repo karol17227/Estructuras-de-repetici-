@@ -10,12 +10,16 @@ Algoritmo encuesta_plataforma
 		Escribir "Ingrese su elección (A=Android / I=iOS / 0=Terminar):"
 		Leer eleccion
 		
-		Si eleccion == "A" Entonces
+		Si eleccion == "A" O eleccion == "a" Entonces
 			votosAndroid <- votosAndroid + 1
 		FinSi
 		
-		Si eleccion == "I" Entonces
+		Si eleccion == "I" O eleccion == "i" Entonces
 			votosIOS <- votosIOS + 1
+		FinSi
+		
+		Si eleccion <> "A" Y eleccion <> "a" Y eleccion <> "I" Y eleccion <> "i" Y eleccion <> "0" Entonces
+			Escribir "Opción no válida, intente de nuevo"
 		FinSi
 		
 	Hasta Que eleccion == "0"
